@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanti Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body class="text-gray-900">
+
+    <!-- Banner superior -->
+    <div class="bg-blue-600 text-white text-center p-2">
+        Ganhe <span class="container bg-purple-700 rounded-md px-1">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <strong>DESCONTO10</strong>
+    </div>
+
+    <!-- Header -->
+<header class="bg-white shadow-md p-4">
+    <div class="container mx-auto">
+        <div class="flex justify-between items-center mb-2">
+            <h1 class="text-4xl font-bold">AVANTI</h1>
+            <div class="flex items-center gap-2">
+                <input id="searchInput" type="text" placeholder="Digite aqui o que você procura" class="border rounded-lg p-2 w-96 font-bold">
+                <button id="searchButton" class="bg-blue-500 text-white p-2 rounded-lg">🔍</button>
+            </div>
+            <div class="flex items-center gap-4">
+                <span>👤 Olá, Nome cliente!</span>
+                <button class="relative">🛒<span class="absolute -top-1 -right-1 bg-blue-600 text-white rounded-full px-2">2</span></button>
+            </div>
+        </div>
+        <div class="flex justify-between items-center">
+            <button class="text-lg">☰ Todas as Categorias</button>
+            <div class="flex gap-8">
+            <button class="text-lg">Departamento</button>    
+            <button class="text-lg">Departamento</button>    
+            <button class="text-lg">Departamento</button>    
+            <button class="text-lg">Departamento</button>    
+            <button class="text-lg">Departamento</button>    
+            <button class="text-lg">Departamento</button>    
+            <button class="text-lg">Departamento</button>    
+            <button class="text-lg">Departamento</button>    
+            </div>
+            <div class="w-[120px]"></div>
+        </div>
+    </div>
+</header>
+
+    <!-- Resultado da busca -->
+    <div id="searchResult" class="container mx-auto mt-4 text-lg"></div>
+
+    <!-- Banner principal -->
+    <section class="mx-auto mt-8 flex items-center bg-gray-200 rounded-lg h-96">
+        <div class="w-1/2 h-full flex justify-end">
+            <img src="https://theclassictshirt.com/cdn/shop/articles/Minimalist_wardrobe_The_Classic_T-Shirt.jpg?v=1602507970&width=2840" alt="Promoção" class="rounded-lg w-96 h-full object-cover">
+        </div>
+        <div class="w-1/2 flex justify-start items-end">
+            <div class="p-0">
+                <div class="flex items-baseline">
+                    <h2 class="text-7xl font-bold">SUPER</h2>
+                    <h2 class="text-7xl">SALE</h2>
+                </div>
+                <p class="text-xl text-blue-600 mt-8 flex justify-center tracking-widest">ITENS SELECIONADOS COM ATÉ</p>
+                <p class="text-5xl text-blue-600 font-bold mt-2 flex justify-center">50% OFF</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Carrossel de lançamentos -->
+    <section class="container mx-auto mt-12">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-3xl font-semibold">Lançamentos</h2>
+            <a href="#" class="text-blue-500">Ver mais</a>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="mx-auto mt-8 flex items-center bg-white rounded-lg"> 
+        <div class="w-1/2 h-full flex justify-end py-1">
+            <img src="https://i.postimg.cc/FRXNYRV1/imagem-2025-03-28-190946917.png" alt="Promoção" class="h-full object-cover mr-8">
+        </div>
+        <div class="w-1/2 flex justify-start items-end">
+            <div class="p-0 mr-80">
+                    <h2 class="text-3xl font-bold tracking-wide">LOREM IPSUM</h2>
+                    <h2 class="text-xl py-2 ">Duis consectetur metus nec lacus auctor dignissim. 
+                        Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</h2>
+                    <h2 class="text-xl py-2 ">Duis consectetur metus nec lacus auctor dignissim. 
+                        Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</h2>
+  
+                </div>
+        </div>
+        
+    </section>
+
+    <section class="container-xl mt-6 flex flex-col lg:flex-row items-center p-6 bg-gray-300 "> 
+        <div class="lg:w-1/2 text-left space-y-6">
+            <h2 class="text-3xl font-bold flex justify-center ml-64">LOREM IPSUM</h2>
+            <div class="space-y-4 ml-80">        
+                <div class="flex items-start space-x-4">
+                    <img src="https://cdn-icons-png.freepik.com/256/7324/7324712.png" alt="Promoção" class="h-16 object-cover">
+                    <p class="text-xl py-2 justify-end">
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                </div>
+                <div class="flex items-start space-x-4">
+                    <img src="https://cdn-icons-png.freepik.com/256/7324/7324712.png" alt="Promoção" class="h-16 object-cover">
+                    <p class="text-xl py-2 justify-end">
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                </div>
+                <div class="flex items-start space-x-4">
+                    <img src="https://cdn-icons-png.freepik.com/256/7324/7324712.png" alt="Promoção" class="h-16 object-cover">
+                    <p class="text-xl py-2 justify-end"> 
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                </div>                
+            </div>
+        </div>
+
+        <div class="w-1/2 h-full flex justify-start py-1">
+            <img src="https://i.postimg.cc/gk0VSyfy/imagem-2025-03-28-192206968.png" alt="Promoção" class="h-full object-cover mr-8">
+        </div>
+
+    </section>
+
+    <section class="mx-auto mt-8 flex items-center bg-white rounded-lg">
+        <div class="w-1/2 h-full flex justify-end py-1">
+            <img src="https://i.postimg.cc/FRXNYRV1/imagem-2025-03-28-190946917.png" alt="Promoção" class="h-full object-cover mr-8">
+        </div>
+        <div class="w-1/2 flex justify-start items-end">
+            <div class="p-0 mr-80">
+                    <h2 class="text-3xl font-bold tracking-wide">LOREM IPSUM</h2>
+                    <h2 class="text-xl py-2 ">Duis consectetur metus nec lacus auctor dignissim. 
+                        Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</h2>
+                    <h2 class="text-xl py-2 ">Duis consectetur metus nec lacus auctor dignissim. 
+                        Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</h2>
+  
+                </div>
+        </div>
+        
+    </section>    
+
+    <section class="container mx-auto mt-12">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-3xl font-semibold">Lançamentos</h2>
+            <a href="#" class="text-blue-500">Ver mais</a>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+                <div class="swiper-slide bg-white shadow-lg rounded-lg px-2 py-2">
+                    <span class="bg-blue-800 text-white text-sm px-2 py-1 rounded-lg">NOVO</span>
+                    <img src="https://www.insiderstore.com.br/cdn/shop/files/01_crop_tech_u-2.jpg?v=1742334728" alt="Produto" class="my-4">
+                    <h3 class="text-lg font-bold">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 line-through">R$ 100,00</p>
+                    <p class="font-bold">R$ 79,90 <span class="bg-green-400 text-white text-sm px-2 py-1 rounded ml-4">10% OFF</span></p>
+                    <p class="text gray-600">Ou em até <span class="text-gray-600 font-semibold">10x de R$ 7,90</span> </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white text-m px-2 py-3 rounded-lg w-full">Comprar</button>   
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class=" py-12 mt-4 bg-[url('https://images.adsttc.com/media/images/5f34/861e/b357/65bf/b500/0113/medium_jpg/_B3A1690.jpg?1597277714')] bg-center bg-cover h-96 flex items-center justify-center">
+        <div class="flex bg-blue-700 text-white items-center justify-center h-32 w-full">
+        <p class="text-2xl items-center">Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+        </div>
+    </section>
+
+<!-- Newsletter -->
+    <h3 class="text-xl font-semibold flex justify-center mt-12">Cadastre-se na nossa <span class="text-blue-600 ml-2"> newsletter</span></h3>
+<section class="container mx-auto my-10 p-6 bg-gray-300 rounded-lg text-center h-40 flex items-center justify-center" style="max-width: 1300px;">
+    <div class="flex flex-col lg:flex-row justify-center items-center mt-4 space-y-4 lg:space-y-0 lg:space-x-8">
+        <input type="text" placeholder="Digite seu nome" class="p-2 rounded-md w-64">
+        <input type="email" placeholder="Digite seu e-mail" class="p-2 rounded-md w-64">
+
+        <label class="flex items-center space-x-3 cursor-pointer">
+            <div class="relative">
+              <input type="checkbox" class="sr-only peer">
+              <div class="w-5 h-5 border-2 border-blue-500 rounded-sm flex items-center justify-center peer-checked:bg-blue-500 transition-colors">
+
+                <svg class="w-3 h-3 text-white opacity-0 peer-checked:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </div>
+            </div>
+
+            <span class="text-gray-700">
+                Estou de acordo com a 
+                <a href="/privacy" class="text-blue-600 hover:underline">Política de privacidade</a>
+              </span>
+          </label>
+
+        <button class="bg-blue-600 text-white px-6 py-2 rounded-md">Cadastrar</button>
+    </div>
+</section>
+
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-100 py-10 text-center text-sm">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div>
+            <h1 class="text-4xl font-bold mb-6">AVANTI</h1>           
+            <div class="tracking-widest">
+                📷                   📘                   ▶️                   🎵
+            </div> 
+            </div>
+            <div>
+                <h4 class="font-semibold">Institucional</h4>
+                <p>Sobre Nós</p>
+                <p>Nossas Lojas</p>
+                <p>Privacidade e Segurança</p>
+                <p>Termos e Condições</p>
+            </div>
+            <div>
+                <h4 class="font-semibold">Central de ajuda</h4>
+                <p>Fale Conosco</p>
+                <p>Frete e Entrega</p>
+                <p>Trocas e Devoluções</p>
+                <p>Formas de Pagamento</p>
+                <p>FAQ</p>
+            </div>
+            <div>
+                <h4 class="font-semibold">Atendimento</h4>
+                <p><span class="font-semibold">Telefone:</span> (00) 1234-5678</p>
+                <p><span class="font-semibold">E-mail:</span> exemplo@exemplo.com.br</p>
+                <p class="font-semibold">Horário de Atendimento</p>
+                <p>Segunda a Sábado: 07h00 às 23h00</p>
+                <p>Domingos e Feriados: 07h00 às 21h00</p>
+            </div>
+            
+            
+        </div>
+        <div class="mt-4 flex justify-center space-x-4">
+            <span>💳 Visa</span>
+            <span>💳 Mastercard</span>
+            <span>💳 PayPal</span>
+            <span>💳 Elo</span>
+        </div>
+    </footer>
+    <p class="my-8 flex justify-center text-center mx-96">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisi ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla 
+        facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Lógica de busca
+        document.getElementById('searchButton').addEventListener('click', () => {
+            const query = document.getElementById('searchInput').value;
+            const result = document.getElementById('searchResult');
+            result.textContent = query ? `Assunto buscado: '${query}'` : '';
+        });
+
+        // Inicializa o carrossel
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
